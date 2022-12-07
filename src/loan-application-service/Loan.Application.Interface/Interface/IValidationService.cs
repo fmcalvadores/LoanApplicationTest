@@ -1,4 +1,5 @@
-﻿using Loan.Application.Commons;
+﻿
+using Loan.Application.Commons;
 using System;
 using System.Threading.Tasks;
 

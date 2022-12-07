@@ -1,6 +1,5 @@
-﻿
-using Loan.Application.Commons;
-using Loan.Application.DTO.DTO;
+﻿using Loan.Application.Commons;
+using Loan.Application.DTO;
 using System.Threading.Tasks;
 
 namespace Loan.Application.Interfaces

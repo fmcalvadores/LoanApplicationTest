@@ -9,8 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\loan-application-core\Loan.Application.Commons\Loan.Application.Commons\Loan.Application.Commons.csproj" />
-    <ProjectReference Include="..\..\..\loan-application-core\Loan.Application.Core\Loan.Application.DTO.csproj" />
+    <ProjectReference Include="..\Loan.Application.Interface\Loan.Application.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

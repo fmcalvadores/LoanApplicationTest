@@ -1,6 +1,5 @@
-﻿
-using Loan.Application.Commons;
-using Loan.Application.DTO.DTO;
+﻿using Loan.Application.Commons;
+using Loan.Application.DTO;
 using Loan.Application.Interfaces;
 using Microsoft.Extensions.Logging;
 using System;

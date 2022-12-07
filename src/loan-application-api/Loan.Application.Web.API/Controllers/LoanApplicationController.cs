@@ -1,5 +1,5 @@
 ﻿using Loan.Application.Commons;
-using Loan.Application.DTO.DTO;
+using Loan.Application.DTO;
 using Loan.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

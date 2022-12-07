@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Loan.Application.DTO.DTO
+namespace Loan.Application.DTO
 {
     public class ApplicantDTO
     {
