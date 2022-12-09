@@ -2,24 +2,18 @@
 using Loan.Application.DTO;
 using Loan.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Loan.Application.Web.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
-    public class LoanApplicationController: ControllerBase
+    [Route("api/")]
+    public class LoanApplicationController : ControllerBase
     {
-        private readonly ILogger<LoanApplicationController> _logger;
         private readonly IPreAssessmentService _preAssessmentService;
 
-        public LoanApplicationController(ILogger<LoanApplicationController> logger, IPreAssessmentService preAssessmentService)
+        public LoanApplicationController(IPreAssessmentService preAssessmentService)
         {
-            _logger = logger;
             _preAssessmentService = preAssessmentService;
         }
 

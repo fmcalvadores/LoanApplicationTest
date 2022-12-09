@@ -7,5 +7,6 @@ namespace Loan.Application.Interfaces
     public interface IPreAssessmentService
     {
         Task<Result> AssessApplicant(ApplicantDTO dto);
+
     }
 }

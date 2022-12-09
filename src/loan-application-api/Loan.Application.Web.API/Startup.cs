@@ -1,18 +1,12 @@
+using Loan.Application.Commons;
 using Loan.Application.Interfaces;
 using Loan.Application.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Loan.Application.Web.API
 {
@@ -35,6 +29,15 @@ namespace Loan.Application.Web.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Loan.Application.Web.API", Version = "v1" });
             });
 
+            services.Configure<LocalNumbersOptions>(Configuration.GetSection("LocalNumbersOptions"));
+            services.Configure<IndustryOptions>(Configuration.GetSection("IndustryOptions"));
+            services.Configure<LoanAmountOptions>(Configuration.GetSection("LoanAmountOptions"));
+            services.Configure<CitizenshipOptions>(Configuration.GetSection("CitizenshipOptions"));
+            services.Configure<TradingTimeOptions>(Configuration.GetSection("TradingTimeOptions"));
+            services.Configure<CountryCodeOptions>(Configuration.GetSection("CountryCodeOptions"));
+            services.Configure<BusinessNumberOptions>(Configuration.GetSection("BusinessNumberOptions"));
+
+
             services.AddScoped<IPreAssessmentService, PreAssessmentService>();
             services.AddScoped<IValidationService, ValidationService>();
         }
@@ -48,7 +51,7 @@ namespace Loan.Application.Web.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Loan.Application.Web.API v1"));
             }
-            
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

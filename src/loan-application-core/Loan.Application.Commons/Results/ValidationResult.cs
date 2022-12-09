@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Loan.Application.Commons
+﻿namespace Loan.Application.Commons
 {
     public class ValidationResult
     {
@@ -16,7 +12,7 @@ namespace Loan.Application.Commons
         {
             Rule = "";
             Message = "";
-            Decision = "";
+            Decision = Constants.QUALIFIED;
 
         }
 

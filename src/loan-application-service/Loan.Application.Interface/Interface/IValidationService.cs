@@ -1,30 +1,32 @@
 ﻿
 using Loan.Application.Commons;
-using System;
+using Loan.Application.DTO;
 using System.Threading.Tasks;
 
 namespace Loan.Application.Interfaces
 {
     public interface IValidationService
     {
-        Task<ValidationResult> ValidateFirstName(string fname, string fldName);
+        ValidationResult ValidateFirstName(string fname);
 
-        Task<ValidationResult> ValidateLastName(string lname, string fldName);
+        ValidationResult ValidateLastName(string lname);
 
-        Task<ValidationResult> ValidateEmail(string email, string fldName);
+        ValidationResult ValidateEmail(string email);
 
-        Task<ValidationResult> ValidatePhoneNumber(string pnumber, string fldName);
+        ValidationResult ValidatePhoneNumber(string pnumber);
 
-        Task<ValidationResult> ValidatBusinessNumber(string bnumber, string fldName);
+        Task<ValidationResult> ValidatBusinessNumber(string bnumber, bool isExisting);
 
-        Task<ValidationResult> ValidateLoanAmount(float amount, string fldName);
+        ValidationResult ValidateLoanAmount(double amount);
 
-        Task<ValidationResult> ValidateCitizenship(string citizenship, string fldName);
+        ValidationResult ValidateCitizenship(string citizenship);
 
-        Task<ValidationResult> ValidateTradingTime(DateTime tradingTime, string fldName);
+        ValidationResult ValidateTradingTime(int tradingTime);
 
-        Task<ValidationResult> ValidateCountryCode(string countryCode, string fldName);
+        ValidationResult ValidateCountryCode(string countryCode);
 
-        Task<ValidationResult> ValidateIndustry(string industry, string fldName);
+        ValidationResult ValidateIndustry(string industry);
+
+        ValidationResult ValidateApplication(string filepath, ApplicantDTO dto);
     }
 }

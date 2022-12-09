@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Loan.Application.Commons
+﻿namespace Loan.Application.Commons
 {
     public static class Constants
     {

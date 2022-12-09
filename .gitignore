@@ -245,3 +245,4 @@ src/docukit-web/Docukit.Web/wwwroot/FormCapture/5d92ded504df97331cfffd03/5d93133
 src/docukit-web/Docukit.Web/wwwroot/FormCapture/
 publish-api-web-only.bat
 src/docukit-background-service/Docukit.ZoneOCR/tessdata/eng.traineddata
+src/loan-application-api/Loan.Application.Web.API/qualified-accounts.csv

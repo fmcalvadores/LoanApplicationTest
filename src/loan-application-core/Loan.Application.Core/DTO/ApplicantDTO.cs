@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Loan.Application.DTO
+﻿namespace Loan.Application.DTO
 {
     public class ApplicantDTO
     {
@@ -15,15 +13,15 @@ namespace Loan.Application.DTO
 
         public string BusinessNumber { get; set; }
 
-        public string LoanAmount { get; set; }
+        public double LoanAmount { get; set; }
 
-        public int Citizenship { get; set; }
+        public string Citizenship { get; set; }
 
-        public DateTime TimeTrading { get; set; }
+        public int TimeTrading { get; set; }
 
         public string CountryCode { get; set; }
 
-        public int Industry { get; set; }
+        public string Industry { get; set; }
     }
 }
 

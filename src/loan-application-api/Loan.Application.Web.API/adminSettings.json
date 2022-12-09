@@ -1,0 +1,32 @@
+{
+  "LocalNumbersOptions": {
+    "LocalsNumber": [ "+614", "02", "03", "04", "07", "08" ],
+    "PhoneNumberMaxLength" :  8
+  },
+  "IndustryOptions": {
+    "AllowedIndustries": [
+      "Information Technology",
+      "Manufacturing",
+      "Industrial"
+    ],
+    "BannedIndustries": [
+      "Call Center",
+      "Government",
+      "NGO"
+    ]
+  },
+  "LoanAmount": {
+    "MinAmount": 10.00,
+    "MaxAmount": 100.00
+  },
+  "CitizenshipOptions": {
+    "Options": [ "Citizen", "Permanent Resident" ]
+  },
+  "TradingTimeOptions": {
+    "MinTime": 1,
+    "MaxTime": 20
+  },
+  "CountryCodeOptions": {
+    "CountryCode" :  "AU"
+  }
+}
